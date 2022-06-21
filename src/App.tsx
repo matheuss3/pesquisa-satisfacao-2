@@ -4,9 +4,9 @@ import style from './form.module.scss';
 import { BiLike, BiDislike } from 'react-icons/bi'
 
 function App() {
-
   const notasPossiveis: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const [nota, setNota] = useState(10);
+
   return (
     <main className="container">
       <form action="">
@@ -23,10 +23,10 @@ function App() {
         </div>
         <div onMouseOver={() => {
           const divElement = document.querySelector('form > div')
-          divElement?.setAttribute('style', 'width:50%')
+          divElement?.setAttribute('style', 'width:60%')
         }} onMouseLeave={() => {
           const divElement = document.querySelector('form > div')
-          divElement?.setAttribute('style', 'width:65%')
+          divElement?.setAttribute('style', 'width:70%')
         }} className={style.boxQuesitos}>
             <div className={style.quesito}>
               <p>Texto padrão quesito</p>
